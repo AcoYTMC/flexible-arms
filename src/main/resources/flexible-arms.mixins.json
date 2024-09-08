@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "net.acoyt.flexible_arms.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [],
+	"client": [
+		"models.ArmModelsContainerModelsMixin",
+		"models.ItemModelGeneratorMixin",
+		"models.JsonUnbakedModelDeserializerMixin",
+		"models.JsonUnbakedModelMixin",
+		"rendering.BipedEntityModelMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
