@@ -51,3 +51,29 @@ It's pretty simple! You just need to add a few lines into your existing JSON mod
 
 
 >    JSON does not support comments, you'll need to remove the comments before you put them into a real JSON file!
+
+## Developers
+To add Flexible Arms to your project, you need to add the modrinth maven which can be seen in more depth on how to do so [Here](https://support.modrinth.com/en/articles/8801191-modrinth-maven)
+
+### build.gradle
+```javascript
+repositories {
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+```
+#### and then to add it as a dependency
+```javascript
+dependencies {
+	modImplementation "maven.modrinth:flexible-arms-1.21:${flexible_arms_version}"
+}
+```
+#### gradle.properties
+```
+flexible_arms_version=mc1.21-1.0.0
+```
